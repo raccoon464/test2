@@ -1,0 +1,9 @@
+
+RewriteCond %{REQUEST_URL} !^/(web)
+RewriteRule ^assets/(.*)$ /web/asset/$1 [L]
+RewriteRule ^css/(.*)$ /web/css/$1 [L]
+RewriteRule ^js/(.*)$ /web/js/$1 [L]
+RewriteRule ^fonts/(.*)$ /web/fonts/$1 [L]
+RewriteRule ^plugins/(.*)$ /web/fonts/$1 [L]
+RewriteRule ^images/(.*)$ /web/images/$1 [L]
+RewriteRule (.*)$ /web/$1
